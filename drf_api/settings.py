@@ -55,9 +55,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ['8000-suredeveloping-drfapi-pbcsi7ip0cr.ws.codeinstitute-ide.net',
-                 'sure-moments-8fa30987b0d1.herokuapp.com',
+                 os.environ.get('ALLOWED_HOST'),
+                 
 ]
 
+# 'sure-moments-8fa30987b0d1.herokuapp.com',
 
 # Application definition
 
